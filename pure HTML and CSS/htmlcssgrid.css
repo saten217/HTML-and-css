@@ -13,9 +13,15 @@ footer {
     right:0%;
 }
 
-footer a {
+footer a:hover {
     color: white;
     size: 10px;
+    padding: 20px;
+    text-decoration: underline;
+}
+footer a{
+    color:white;
+    text-decoration: none;
     padding: 20px;
 }
 
@@ -23,7 +29,7 @@ footer a {
     display: grid;
     grid-template-columns: 29% 40% 30%;
     gap: 5px;
-    background-color: #a6e416;
+    background-color:white;
     padding: 5px;
     /* height: 200px; */
 }
@@ -62,27 +68,25 @@ footer a {
     size: 20px;
 }
 
-.topnav button:hover {
-    background-color: rgb(11, 178, 250);
-    color: black;
+.topnav a:hover {
+    background-color:none;
+    color:white;
+    text-decoration: underline;
 }
+
 
 .topnav a {
-    color: white;
-    size: 20px;
-}
-
-
-
-.topnav button {
     size: 10px;
     font-size: medium;
     font-weight: bold;
-    margin: 10px;
+    /* margin: 10px; */
     color:white;
-    background-color:rgb(15, 80, 172);
+    background-color:none;
     border: none;
     margin-top: 20px;
+    text-decoration:none;
+    float:right;
+    padding:20px;
 }
 
 fieldset{
@@ -113,8 +117,162 @@ img{
 .topnav img{
     height: 80px;
     width: 80px;
+    cursor: pointer;
+
 }
 
 fieldset label, a{
     font-size: 20px;
 }
+
+.topnav img:hover{
+    background-image:url(https://www.pinterest.com/pin/281967626653036301/);
+}
+
+.animate-charcter
+{
+   
+  background-image: linear-gradient(
+    -225deg,
+    #a28eeb 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+  .item2 *{box-sizing: border-box;}
+  .item2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+  h1 {
+    color: #333;
+    font-family: tahoma;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 2.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 400px;
+  }
+  
+  h1 span {
+    font-size: 25px;
+    margin-left: 25px;
+  }
+  
+  .message {
+    background-color: yellow;
+    color: #333;
+    display: block;
+    font-weight: 100px;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 150px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+  
+  .word1, .word2, .word3 {
+    font-family: tahoma;
+  }
+  
+  @keyframes openclose {
+    /* 0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+      
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }*/
+    95% {
+      top: -7rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+
+  .grid #item4{
+    float:left;
+  }
+
+  #py1{
+    height:475px;
+    width:100%;
+    border-radius: 0%;
+    opacity: 100%;
+  }
